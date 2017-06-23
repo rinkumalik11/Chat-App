@@ -4,10 +4,10 @@
   "description": "A chat app",
   "main": "index.js",
   "scripts": {
-    "start":"node server/server.js",
+    "start": "node server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "engines":{
+  "engines": {
     "node": "7.0.0"
   },
   "author": "",
@@ -15,6 +15,7 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "express": "^4.15.3",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "socket.io": "^2.0.3"
   }
 }
