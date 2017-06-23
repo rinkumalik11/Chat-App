@@ -1,15 +1,8 @@
-(function(){
-	'use strict';
 
-	var socket = io();
+var socket = io();
 
 	socket.on('connect',function(){
 		console.log('Connected to server');
-	});
-
-	socket.emit('createMessage',{
-		from: 'this',
-		text: 'This works perfectly'
 	});
 
 	socket.on('newMessage',function(message){
@@ -19,8 +12,3 @@
 	socket.on('disconnect', function() {
 		console.log('Disconnected from server');
 	});
-
-	socket.on('newMessage', function(email){
-		console.log(email);
-	});
-})();
